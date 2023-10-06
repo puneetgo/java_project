@@ -51,7 +51,7 @@ stage('Test'){
                 sh 'mvn -s pom.xml checkstyle:checkstyle'
             }
         }
-    }
+    
         // Building Docker images
     stage('Building image') {
       steps{
@@ -80,5 +80,6 @@ stage('Test'){
                 }
             } 
         }
+}
 }
 }
